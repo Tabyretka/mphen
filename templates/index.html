@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>да</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+<div style="width: 50%; margin: 0 auto; text-align: center;">
+    <form>
+                    <input class="form-control me-2" type="search" placeholder="Введите заголовок" name="q"
+                           aria-label="Искать"
+                           value="{{ request.args.get('q', '') }}">
+                    <button class="btn btn-outline-success" type="submit">Искать</button>
+    </form>
+</div>
+<style>
+  form {
+  width:400px;
+  margin:auto;
+  margin-top: 250px;
+  }
+  input{
+  padding:4px 10px;
+  border:0;
+  font-size:16px;
+  }
+  .search {
+  width: 75%;
+  }
+  .submit{
+  width: 70px;
+  background-color: #1c87c9;
+  color:#ffffff;
+  }
+</style>
+
+</body>
+</html>
