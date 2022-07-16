@@ -3,6 +3,8 @@ from flask import Flask, render_template, request
 import parsers
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
+app.config['SESSION_TYPE'] = 'filesystem'
 
 
 @app.route("/")
